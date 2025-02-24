@@ -7,7 +7,9 @@ class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Image.asset(Assets.sign_in_image),
+      body: Column(
+        children: [Image.asset(Assets.sign_in_image), Text('hjyuyuyu;')],
+      ),
     );
   }
 }
