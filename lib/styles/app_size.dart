@@ -1,34 +1,18 @@
 import 'package:flutter/widgets.dart';
 
 class AppSize {
-  static late double screenWidth;
-  static late double screenHeight;
-  static late double scaleWidth;
-  static late double scaleHeight;
+  static double height = 0;
+  static double width = 0;
+  static double padding = 16.0;
 
-  // Initialize the class with the current context
   static void init(BuildContext context) {
-    screenWidth = MediaQuery.of(context).size.width;
-    screenHeight = MediaQuery.of(context).size.height;
+    height = MediaQuery.of(context).size.height;
+    width = MediaQuery.of(context).size.width;
 
-    // Define a reference screen size (e.g., a common mobile screen size)
-    const double referenceWidth =
-        411.43; // Reference width (e.g., iPhone 12/13 mini)
-    const double referenceHeight =
-        866.29; // Reference height (e.g., iPhone 12/13 mini)
-
-    // Calculate scaling factors
-    scaleWidth = screenWidth / referenceWidth;
-    scaleHeight = screenHeight / referenceHeight;
+    padding = width * 0.05;
   }
 
-  // Scale height based on the reference height
-  static double height(double value) => value * scaleHeight;
-
-  // Scale width based on the reference width
-  static double width(double value) => value * scaleWidth;
-
-  // Scale font size or other dimensions based on the average of width and height scaling
-  static double fontSize(double value) =>
-      value * ((scaleWidth + scaleHeight) / 2);
+  // Methods to convert integer values to responsive sizes based on actual screen dimensions
+  static double responsiveHeight(double value) => height * (value / height);
+  static double responsiveWidth(double value) => width * (value / width);
 }

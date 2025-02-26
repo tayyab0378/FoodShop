@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_shop/pages/auth/sign_in_page.dart';
-import 'package:food_shop/pages/splash_page.dart';
 import 'package:food_shop/styles/app_size.dart';
+
+import 'pages/auth/sign_up_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Builder(
       builder: (context) {
-        AppSize.init(context); // Initialize AppSize with MediaQuery data
+        AppSize.init(context);
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: SignInPage(),
+          home: SignUpPage(),
         );
       },
     );

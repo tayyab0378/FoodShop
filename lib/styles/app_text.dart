@@ -24,4 +24,28 @@ class AppText {
     height: 30 / 20, // Line height (30px ÷ 20px = 1.5)
     color: Color(0xFF6CC51D), // Hex color #6CC51D (Green)
   );
+  static const TextStyle customTextStyle1 = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w500, // 500 weight (Medium)
+    fontSize: 18, // 18px size
+    height: 27 / 18, // Line height (27px ÷ 18px = 1.5)
+    letterSpacing: 0.03 * 18, // 3% of 18px (0.03 * 18 = 0.54)
+    color: Colors.white, // Hex color #FFFFFF (White)
+  );
+  static const text2 = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600, // Weight 600
+    fontSize: 25, // Size 25px
+    height: 37.5 / 25, // Line height (37.5px) divided by font size (25px)
+    letterSpacing: 0.03 * 25, // Letter spacing (3% of font size)
+    color: Color(0xFF000000), // Color #000000
+  );
+  static const text3 = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w400, // Weight 400
+    fontSize: 15, // Size 15px
+    height: 22.5 / 15, // Line height (22.5px) divided by font size (15px)
+    letterSpacing: 0.03 * 15, // Letter spacing (3% of font size)
+    color: Color(0xFF868889), // Color #868889
+  );
 }

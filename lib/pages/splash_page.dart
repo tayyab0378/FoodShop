@@ -37,41 +37,30 @@ class SplashPageState extends State<SplashPage> {
             ),
           ),
           Positioned(
-            top: AppSize.height(96),
-            left: AppSize.width(47),
+            top: AppSize.responsiveHeight(90),
+            left: AppSize.responsiveWidth(47),
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: AppSize.width(50)),
-              height: AppSize.height(200),
-              width: AppSize.width(320),
+              padding:
+                  EdgeInsets.symmetric(horizontal: AppSize.responsiveWidth(50)),
+              height: AppSize.responsiveHeight(200),
+              width: AppSize.responsiveWidth(320),
               child: Column(
                 children: [
-                  Text(
-                    'Welcome to',
-                    style: AppText.heading1
-                        .copyWith(fontSize: AppSize.fontSize(24)),
-                  ),
+                  Text('Welcome to', style: AppText.heading1),
                   Image.asset(Assets.big_cart),
                 ],
               ),
             ),
           ),
           Positioned(
-            top: AppSize.height(806),
-            left: AppSize.width(147),
-            child: Text(
-              'POWERED BY',
-              style: AppText.paragraphStyle
-                  .copyWith(fontSize: AppSize.fontSize(14)),
-            ),
+            top: AppSize.responsiveHeight(800),
+            left: AppSize.responsiveWidth(147),
+            child: Text('POWERED BY', style: AppText.paragraphStyle),
           ),
           Positioned(
-            top: AppSize.height(835),
-            left: AppSize.width(121),
-            child: Text(
-              '    THE CODE CRAFT',
-              style: AppText.customTextStyle
-                  .copyWith(fontSize: AppSize.fontSize(16)),
-            ),
+            top: AppSize.responsiveHeight(820),
+            left: AppSize.responsiveWidth(121),
+            child: Text('THE CODE CRAFT', style: AppText.customTextStyle),
           ),
         ],
       ),
