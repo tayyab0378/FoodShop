@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_shop/components/app_textfield.dart';
+import 'package:food_shop/pages/card_page.dart';
 import 'package:food_shop/pages/category_page.dart';
 import 'package:food_shop/styles/app_size.dart';
 import 'package:food_shop/styles/app_text.dart';
@@ -106,7 +107,7 @@ class HomePage extends StatelessWidget {
           Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => CategoryPage(),
+                builder: (context) => CardPage(),
               ));
         },
         backgroundColor: Color(0xFF6CC51D),
