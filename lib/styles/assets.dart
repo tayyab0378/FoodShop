@@ -7,6 +7,7 @@ class Assets {
   static const big_cart = '${_images}bigCart.png';
   static const sign_in_image = '${_images}sign_in_image.png';
   static const sign_up_image = '${_images}sign_up_image.png';
+  static const banner_image = '${_images}banner_image.png';
 
 // icons
 }

@@ -48,4 +48,20 @@ class AppText {
     letterSpacing: 0.03 * 15, // Letter spacing (3% of font size)
     color: Color(0xFF868889), // Color #868889
   );
+  static const TextStyle poppinsTextStyle = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600, // 600 weight
+    fontSize: 18, // 18px
+    height: 27 / 18, // Line height: 27px
+    letterSpacing: 0, // 0% letter spacing
+    color: Color(0xFF000000), // Black color
+  );
+  static const TextStyle poppinsTextStyle1 = TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600, // weight 600
+    fontSize: 15, // 15px size
+    height: 22.5 / 15, // line height of 22.5px (factor = 22.5/15)
+    letterSpacing: 0, // 0% letter spacing
+    color: Color(0xFF000000), // Black color
+  );
 }
