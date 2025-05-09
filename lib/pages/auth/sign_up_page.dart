@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 import 'package:food_shop/pages/auth/sign_in_page.dart';
 import 'package:food_shop/pages/home_page.dart';

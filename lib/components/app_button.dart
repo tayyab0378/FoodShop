@@ -11,7 +11,7 @@ class AppButton extends StatelessWidget {
   final double? fontSize;
 
   const AppButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onPressed,
     this.color,
@@ -20,7 +20,7 @@ class AppButton extends StatelessWidget {
     this.borderRadius,
     this.padding,
     this.fontSize,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 class AppTextField extends StatelessWidget {
@@ -17,7 +19,7 @@ class AppTextField extends StatelessWidget {
   final IconData? suffixIcon;
 
   const AppTextField({
-    Key? key,
+    super.key,
     required this.hintText,
     this.controller,
     this.keyboardType = TextInputType.text,
@@ -32,7 +34,7 @@ class AppTextField extends StatelessWidget {
     this.hintColor,
     required this.prefixIcon,
     this.suffixIcon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -74,3 +76,5 @@ class AppTextField extends StatelessWidget {
     );
   }
 }
+
+TextStyle({required color}) {}

@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names, unused_field
+
 class Assets {
   static const _images = 'assets/images/';
   static const _icons = 'assets/icons/';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_shop/components/app_textfield.dart';
+import 'package:food_shop/components/app_textfield.dart' as app_textfield;
 import 'package:food_shop/pages/card_page.dart';
 import 'package:food_shop/pages/category_page.dart';
 import 'package:food_shop/styles/app_size.dart';
@@ -11,7 +11,7 @@ import '../models/cetagory.dart';
 import '../models/products.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              AppTextField(
+              app_textfield.AppTextField(
                 hintText: 'Search keywords',
                 prefixIcon: Icons.search,
                 suffixIcon: Icons.sort,
@@ -144,7 +144,8 @@ class HomePage extends StatelessWidget {
             ),
           ),
           SizedBox(height: 5),
-          Text(label, style: TextStyle(fontSize: 12)),
+          Text(label,
+              style: TextStyle(fontSize: 12)), // Use the correct TextStyle
         ],
       ),
     );
